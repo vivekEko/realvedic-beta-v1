@@ -1,3 +1,4 @@
+// Components and Pages
 import Header from "./components/global/Header";
 import SubHeader from "./components/global/SubHeader";
 import HomePage from "./pages/HomePage";
