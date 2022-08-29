@@ -47,7 +47,7 @@ const BestSeller = () => {
         </div>
 
         {/* bestseller grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3  gap-5 py-5 w-[85%] mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-5 py-5 w-[85%] mx-auto">
           {products?.map((data, index) => {
             return (
               <div className="group">

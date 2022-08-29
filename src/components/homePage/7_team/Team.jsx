@@ -24,7 +24,7 @@ const teamMembers = [
     cover_img: blob2,
     profile_img: profileImg,
     message:
-      "Technocrat entrepreneur with over 20+ years experience. He is the founder and CEO of EKO Infomatics Solutions. Head of Decision Science Team at GE and VP Research and Analytics at WNS. He dons many hats and loves the challenges of a startup.",
+      "Entrepreneur with over 10 years of experience in the hospitality industry. His foray began in 2010 when he entered his....",
   },
   {
     name: "Rajlaxmi Shivram",
@@ -32,7 +32,7 @@ const teamMembers = [
     cover_img: blob3,
     profile_img: profileImg,
     message:
-      "Technocrat entrepreneur with over 20+ years experience. He is the founder and CEO of EKO Infomatics Solutions. Head of Decision Science Team at GE and VP Research and Analytics at WNS. He dons many hats and loves the challenges of a startup.",
+      "Ex-Portfolio head in the Ecommerce vertical in HDFC Bank and has an overall experience of around 20 years...",
   },
   {
     name: "Ranganathan Srinivasan",
@@ -54,17 +54,21 @@ const Team = () => {
         </div>
 
         {/* team members */}
-        <div className="mt-10 grid grid-cols-2 gap-5 md:grid-cols-2">
+        <div className="mt-10 grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4 w-[85%] mx-auto">
           {teamMembers?.map((data, index) => {
             return (
               <div>
                 {/* Image with vector*/}
-                <div className="relative">
-                  <img src={data?.cover_img} alt="..." />
+                <div className="relative mx-auto w-fit">
+                  <img
+                    src={data?.cover_img}
+                    alt="..."
+                    className="md:w-[90%] lg:w-[85%] xl:w-[80%] "
+                  />
                   <img
                     src={data?.profile_img}
                     alt="..."
-                    className="absolute rounded-full w-[100px] aspect-square z-10 top-[25%] "
+                    className="absolute rounded-full w-[100px] md:w-[120px]  aspect-square z-10 top-[25%]  "
                   />
                 </div>
 
