@@ -33,7 +33,7 @@ const Category = () => {
   ];
 
   return (
-    <div className="mt-10">
+    <section className="mt-10">
       <div>
         {/* Heading */}
         <div className="flex justify-between items-center w-[85%] mx-auto ">
@@ -44,10 +44,10 @@ const Category = () => {
         </div>
 
         {/* Category grid */}
-        <div className="flex flex-col flex-wrap md:flex-row md:justify-between gap-5  w-full md:w-[85%] mx-auto my-10">
+        <div className="flex flex-col flex-wrap md:flex-row md:justify-start gap-5  w-full md:w-[85%] mx-auto my-10">
           {categoryList?.map((data, index) => {
             return (
-              <>
+              <div key={index}>
                 {data?.categoryName === "Shop All" ? (
                   <div className="bg-[#F3F3F3] md:bg-[#d9d9d9] cursor-pointer group py-9 md:py-7 md:px-2  md:rounded-xl md:w-[250px] md:flex justify-center items-center ">
                     <div className="w-[85%] md:w-[80%] mx-auto flex justify-between items-center">
@@ -71,12 +71,12 @@ const Category = () => {
                     </div>
                   </div>
                 )}
-              </>
+              </div>
             );
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

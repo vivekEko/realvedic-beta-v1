@@ -39,7 +39,7 @@ const BestSeller = () => {
     },
   ];
   return (
-    <div className="mt-10">
+    <section className="mt-10">
       <div>
         {/* Heading */}
         <div className="flex justify-between items-center w-[85%] mx-auto mb-5">
@@ -50,7 +50,7 @@ const BestSeller = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-5 py-5 w-[85%] mx-auto">
           {products?.map((data, index) => {
             return (
-              <div className="group">
+              <div key={index} className="group">
                 <div className="w-full overflow-hidden ">
                   <img
                     src={product}
@@ -91,7 +91,7 @@ const BestSeller = () => {
 
         {/*  */}
       </div>
-    </div>
+    </section>
   );
 };
 

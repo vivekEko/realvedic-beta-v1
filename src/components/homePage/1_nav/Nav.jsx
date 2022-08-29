@@ -12,7 +12,7 @@ import Products from "./nav_links/ProductsLink";
 
 const Nav = () => {
   return (
-    <div className="bg-[#D9D9D9] hidden md:block">
+    <nav className="bg-[#D9D9D9] hidden md:block">
       <div className="w-[85%] lg:w-[70%] flex justify-between items-center gap-10  mx-auto py-10">
         <div>
           <img src={blog} alt="Blog" className="w-[40px] mx-auto mb-1" />
@@ -29,7 +29,7 @@ const Nav = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

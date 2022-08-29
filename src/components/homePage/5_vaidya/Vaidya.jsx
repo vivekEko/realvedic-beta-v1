@@ -6,7 +6,7 @@ import blob from "../../../assets/img/landingPage/vaidya/blob.png";
 
 const Vaidya = () => {
   return (
-    <div className="my-16 ">
+    <section className="my-16 ">
       <div className="w-[85%] sm:w-[80%] md:[40%]  mx-auto relative max-w-[900px] ">
         <img
           src={blob}
@@ -27,7 +27,7 @@ const Vaidya = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -46,7 +46,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <div>
+    <section>
       <div>
         {/* Heading */}
         <div className="flex justify-between items-center w-[85%] mx-auto ">
@@ -57,7 +57,7 @@ const Team = () => {
         <div className="mt-10 grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4 w-[85%] mx-auto">
           {teamMembers?.map((data, index) => {
             return (
-              <div>
+              <div key={index}>
                 {/* Image with vector*/}
                 <div className="relative mx-auto w-fit">
                   <img
@@ -82,7 +82,7 @@ const Team = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -7,6 +7,9 @@ import Vaidya from "../components/homePage/5_vaidya/Vaidya";
 import Story from "../components/homePage/6_story/Story";
 import Team from "../components/homePage/7_team/Team";
 import Follow_Us from "../components/homePage/8_followUs/Follow_Us";
+import Testimony from "../components/homePage/9_testimony/Testimony";
+import JoinUs from "../components/homePage/10_joinUs/JoinUs";
+import Footer from "../components/homePage/11_footer/Footer";
 
 const HomePage = () => {
   return (
@@ -19,7 +22,9 @@ const HomePage = () => {
       <Story />
       <Team />
       <Follow_Us />
-      {/* <div className="h-[100px] bg-black"></div> */}
+      <Testimony />
+      <JoinUs />
+      <Footer />
     </div>
   );
 };

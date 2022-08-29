@@ -83,7 +83,7 @@ const Follow_Us = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <div className="mt-20">
+    <section className="mt-20">
       <div>
         {/* Heading */}
         <div className="flex justify-between items-center w-[85%] mx-auto ">
@@ -133,7 +133,7 @@ const Follow_Us = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
