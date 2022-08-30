@@ -35,25 +35,25 @@ const testimonyData = [
     cover_img: blob1,
     profile_img: profileImg,
     message:
-      "Technocrat entrepreneur with over 20+ years experience. He is the founder and CEO of EKO Infomatics Solutions. Head of Decision Science Team at GE and VP Research and Analytics at WNS. He dons many hats and loves the challenges of a startup.",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ",
   },
   {
     cover_img: blob2,
     profile_img: profileImg,
     message:
-      "Entrepreneur with over 10 years of experience in the hospitality industry. His foray began in 2010 when he entered his....",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ",
   },
   {
     cover_img: blob3,
     profile_img: profileImg,
     message:
-      "Ex-Portfolio head in the Ecommerce vertical in HDFC Bank and has an overall experience of around 20 years...",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ",
   },
   {
     cover_img: blob4,
     profile_img: profileImg,
     message:
-      "Technocrat entrepreneur with over 20+ years experience. He is the founder and CEO of EKO Infomatics Solutions. Head of Decision Science Team at GE and VP Research and Analytics at WNS. He dons many hats and loves the challenges of a startup.",
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ",
   },
 ];
 
@@ -61,11 +61,6 @@ const Testimony = () => {
   // local variables
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [testimonials, setTestimonials] = useState();
-
-  useEffect(() => {
-    console.log("selectedIndex:");
-    console.log(selectedIndex);
-  }, [selectedIndex]);
 
   const testimonyItems = testimonyData?.map((data, index) => {
     return (
@@ -113,7 +108,6 @@ const Testimony = () => {
             items={testimonials}
             disableButtonsControls
             renderDotsItem={(e) => {
-              console.log(e);
               return (
                 <div
                   className={`transition lg:hidden

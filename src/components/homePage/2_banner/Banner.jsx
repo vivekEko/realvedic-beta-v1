@@ -45,7 +45,7 @@ const Banner = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <section className="mt-5">
+    <section className="mt-5 ">
       {/* carousel */}
       <div className="  w-[85%] mx-auto relative">
         <div className=" h-full mx-auto relative md:flex justify-center items-center ">
@@ -60,7 +60,7 @@ const Banner = () => {
               responsive={responsiveObject}
               renderPrevButton={() => {
                 return (
-                  <div className=" absolute left-[-40px] md:left-0 top-[40%] w-[50px]  h-[50px] flex justify-center items-center   opacity-80 hover:opacity-100  group cursor-pointer">
+                  <div className=" absolute left-[-20px] md:left-0 top-[40%] w-[50px]  h-[50px] flex justify-start items-center   opacity-80 hover:opacity-100  group cursor-pointer">
                     <img src={leftArrow} alt="..." className="md:hidden" />
                     <img
                       src={leftDarkArrow}
@@ -72,7 +72,7 @@ const Banner = () => {
               }}
               renderNextButton={() => {
                 return (
-                  <div className="absolute right-[-40px] md:right-0 top-[40%]   w-[50px]  h-[50px] flex justify-center items-center   opacity-80 hover:opacity-100  group cursor-pointer">
+                  <div className=" absolute right-[-20px] md:right-0 top-[40%]   w-[50px]  h-[50px] flex justify-end items-center   opacity-80 hover:opacity-100  group cursor-pointer">
                     <img src={rightArrow} alt="..." className="md:hidden" />
                     <img
                       src={rightDarkArrow}
@@ -99,7 +99,7 @@ const Banner = () => {
               responsive={responsiveObject}
               renderPrevButton={() => {
                 return (
-                  <div className=" absolute left-[-40px] md:left-0 top-[40%] w-[50px]  h-[50px] flex justify-center items-center   opacity-80 hover:opacity-100  group cursor-pointer">
+                  <div className=" absolute left-[-20px] md:left-0 top-[40%] w-[50px]  h-[50px] flex justify-start items-center   opacity-80 hover:opacity-100  group cursor-pointer">
                     <img src={leftArrow} alt="..." className="md:hidden" />
                     <img
                       src={leftDarkArrow}
@@ -111,7 +111,7 @@ const Banner = () => {
               }}
               renderNextButton={() => {
                 return (
-                  <div className="absolute right-[-40px] md:right-0  top-[40%]  w-[50px]  h-[50px] flex justify-center items-center   opacity-80 hover:opacity-100  group cursor-pointer">
+                  <div className="absolute right-[-20px] md:right-0  top-[40%]  w-[50px]  h-[50px] flex justify-end items-center   opacity-80 hover:opacity-100  group cursor-pointer">
                     <img src={rightArrow} alt="..." className="md:hidden" />
                     <img
                       src={rightDarkArrow}

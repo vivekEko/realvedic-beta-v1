@@ -47,7 +47,7 @@ const BestSeller = () => {
         </div>
 
         {/* bestseller grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-5 py-5 w-[85%] mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-5 py-5 w-[85%] mx-auto">
           {products?.map((data, index) => {
             return (
               <div key={index} className="group">
@@ -60,23 +60,23 @@ const BestSeller = () => {
                 </div>
 
                 <div className="flex justify-between items-start font-bold text-sm mt-5">
-                  <h1 className="flex-[0.6] leading-4 md:text-xl md:leading-5">
+                  <h1 className="flex-[0.6] leading-4 text-xs sm:text-sm md:text-base   md:leading-5">
                     {data?.productName}
                   </h1>
                   <div className="flex-[0.4]">
-                    <h1 className="p-3 bg-[#ECECEC] w-fit ml-auto md:text-xl">
+                    <h1 className="p-3 bg-[#ECECEC] w-fit ml-auto text-xs sm:text-sm md:text-base">
                       {data?.weight}
                     </h1>
                   </div>
                 </div>
                 <div className="">
-                  <div className="ml-auto w-fit  text-sm my-2 md:text-xl">
+                  <div className="ml-auto w-fit my-2  text-xs sm:text-sm md:text-base">
                     Rs. {data?.price.toFixed(2)}
                   </div>
-                  <div className="bg-[#D9D9D9] text-sm md:text-lg text-center font-bold p-2 px-8 w-fit ml-auto cursor-pointer active:scale-95 transition-all">
+                  <div className="bg-[#D9D9D9] text-xs sm:text-sm md:text-base text-center font-bold p-2 px-8 w-fit ml-auto cursor-pointer active:scale-95 transition-all">
                     ADD TO CART
                   </div>
-                  <div className="text-xs md:text-base w-fit ml-auto mt-2 cursor-pointer underline-offset-4 hover:underline hidden md:block">
+                  <div className="text-xs sm:text-sm md:text-base w-fit ml-auto mt-2 cursor-pointer underline-offset-4 hover:underline hidden md:block">
                     View Details
                   </div>
                 </div>

@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom fonts */
+@font-face {
+  font-family: "HelveticaLight";
+  src: url("../public/fonts/helvetica-font/Nimbus-Sans-D-OT-Light_32752.ttf");
+}
+
+@font-face {
+  font-family: "HelveticaRegular";
+  src: url("../public/fonts/helvetica-font/FreeSans.otf");
+}
+
 /* Accordian */
 
 .accordian_open {

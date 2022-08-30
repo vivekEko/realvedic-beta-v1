@@ -16,6 +16,12 @@ import "react-alice-carousel/lib/alice-carousel.css";
 const handleDragStart = (e) => e.preventDefault();
 const responsiveObject = {
   0: {
+    items: 1,
+  },
+  600: {
+    items: 2,
+  },
+  768: {
     items: 3,
   },
   1200: {
@@ -104,7 +110,7 @@ const Follow_Us = () => {
               responsive={responsiveObject}
               renderPrevButton={() => {
                 return (
-                  <div className=" absolute left-[-40px] md:left-0 top-[25%] md:top-[35%] w-[50px]  h-[50px] flex justify-center items-center   opacity-80 hover:opacity-100  group cursor-pointer">
+                  <div className=" absolute left-[-20px] md:left-0 top-[25%] md:top-[35%] w-[50px]  h-[50px] flex justify-start items-center   opacity-80 hover:opacity-100  group cursor-pointer">
                     <img src={leftArrow} alt="..." className="md:hidden" />
                     <img
                       src={leftDarkArrow}
@@ -116,7 +122,7 @@ const Follow_Us = () => {
               }}
               renderNextButton={() => {
                 return (
-                  <div className=" absolute right-[-40px] md:right-0 top-[25%] md:top-[35%]   w-[50px]  h-[50px] flex justify-center items-center   opacity-80 hover:opacity-100  group cursor-pointer">
+                  <div className=" absolute right-[-20px] md:right-0 top-[25%] md:top-[35%]   w-[50px]  h-[50px] flex justify-end items-center   opacity-80 hover:opacity-100  group cursor-pointer">
                     <img src={rightArrow} alt="..." className="md:hidden" />
                     <img
                       src={rightDarkArrow}

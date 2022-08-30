@@ -63,19 +63,25 @@ const Team = () => {
                   <img
                     src={data?.cover_img}
                     alt="..."
-                    className="md:w-[90%] lg:w-[85%] xl:w-[80%] "
+                    className="sm:w-[70%] md:w-[90%] lg:w-[85%] xl:w-[80%] "
                   />
                   <img
                     src={data?.profile_img}
                     alt="..."
-                    className="absolute rounded-full w-[100px] md:w-[120px]  aspect-square z-10 top-[25%]  "
+                    className="absolute rounded-full w-[80px] sm:w-[100px] md:w-[120px]  aspect-square z-10 top-[25%]  "
                   />
                 </div>
 
                 <div className="mt-5">
-                  <h1 className="font-bold text-center">{data?.name}</h1>
-                  <h1 className="font-bold text-center">{data?.designation}</h1>
-                  <p className="text-center mt-5">{data?.message}</p>
+                  <h1 className="font-bold text-center text-sm sm:text-base">
+                    {data?.name}
+                  </h1>
+                  <h1 className="font-bold text-center text-sm sm:text-base">
+                    {data?.designation}
+                  </h1>
+                  <p className="text-center mt-5 text-xs sm:text-sm">
+                    {data?.message}
+                  </p>
                 </div>
               </div>
             );

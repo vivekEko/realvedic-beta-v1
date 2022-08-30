@@ -180,7 +180,7 @@ const Footer = () => {
           </h1>
         </div>
 
-        <div className="bg-[#8E8E8E] h-[150px]"></div>
+        <div className="bg-[#8E8E8E] h-[50px]"></div>
       </div>
     </footer>
   );

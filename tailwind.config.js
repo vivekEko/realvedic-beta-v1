@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        helveticaLight: ["HelveticaLight", "sans-serif"],
+        helveticaRegular: ["HelveticaRegular", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

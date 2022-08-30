@@ -13,7 +13,7 @@ import Footer from "../components/homePage/11_footer/Footer";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="font-helveticaRegular">
       <Nav />
       <Banner />
       <Category />
