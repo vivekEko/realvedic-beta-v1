@@ -16,12 +16,12 @@
 /* Accordian */
 
 .accordian_open {
-  max-height: 250px;
-  animation: open 0.5s ease-in;
+  max-height: 500px;
+  animation: open 0.3s ease-in;
 }
 
 .accordian_close {
-  animation: close 0.5s ease-out;
+  animation: close 0.3s ease-out;
 
   max-height: 0px;
 }

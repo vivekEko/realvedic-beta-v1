@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 
 // Media Files
-import arrow from "../../../assets/img/landingPage/footer/down-arrow.png";
-import facebook from "../../../assets/img/landingPage/footer/fb.png";
-import instagram from "../../../assets/img/landingPage/footer/insta.png";
+import arrow from "../../assets/img/landingPage/footer/down-arrow.png";
+import facebook from "../../assets/img/landingPage/footer/fb.png";
+import instagram from "../../assets/img/landingPage/footer/insta.png";
 const Footer = () => {
   // Footer data
   const footerData = [
@@ -68,6 +68,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#D9D9D9] pt-10">
+      {/* Mobile & Tablet footer */}
       <div className="mx-auto w-[85%] pb-3 md:hidden">
         {footerData?.map((data, index) => {
           return (
@@ -131,6 +132,7 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* PC footer */}
       <div className="hidden md:block">
         <div className="grid grid-cols-3 justify-items-center w-[85%] mx-auto ">
           {footerData?.map((data, index) => {

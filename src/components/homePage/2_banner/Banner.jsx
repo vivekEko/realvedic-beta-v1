@@ -26,6 +26,10 @@ const firstBannerItems = [
     className=" flex justify-center h-full  items-center w-full  "
   >
     <div className="h-[300px] md:h-[500px] mx-1 w-full bg-[#d9d9d9] flex justify-center items-center text-xl text-black">
+      {/* <img
+        src="https://firebasestorage.googleapis.com/v0/b/impuploadnps.appspot.com/o/star.png?alt=media&token=8707ff6e-91f3-443b-bff2-0a9123ea4b39"
+        alt=""
+      /> */}
       1
     </div>
   </div>,
@@ -60,7 +64,7 @@ const Banner = () => {
               responsive={responsiveObject}
               renderPrevButton={() => {
                 return (
-                  <div className=" absolute left-[-20px] md:left-0 top-[40%] w-[50px]  h-[50px] flex justify-start items-center   opacity-80 hover:opacity-100  group cursor-pointer">
+                  <div className=" absolute z-20 left-[-20px]  md:left-[10px]  top-[40%] w-[50px]  h-[50px] flex justify-start items-center   opacity-80 hover:opacity-100  group cursor-pointer">
                     <img src={leftArrow} alt="..." className="md:hidden" />
                     <img
                       src={leftDarkArrow}
@@ -72,7 +76,7 @@ const Banner = () => {
               }}
               renderNextButton={() => {
                 return (
-                  <div className=" absolute right-[-20px] md:right-0 top-[40%]   w-[50px]  h-[50px] flex justify-end items-center   opacity-80 hover:opacity-100  group cursor-pointer">
+                  <div className=" absolute z-20 right-[-20px]  md:right-[10px]  top-[40%]   w-[50px]  h-[50px] flex justify-end items-center   opacity-80 hover:opacity-100  group cursor-pointer">
                     <img src={rightArrow} alt="..." className="md:hidden" />
                     <img
                       src={rightDarkArrow}
@@ -99,7 +103,7 @@ const Banner = () => {
               responsive={responsiveObject}
               renderPrevButton={() => {
                 return (
-                  <div className=" absolute left-[-20px] md:left-0 top-[40%] w-[50px]  h-[50px] flex justify-start items-center   opacity-80 hover:opacity-100  group cursor-pointer">
+                  <div className=" absolute left-[-20px] md:left-[10px] top-[40%] w-[50px]  h-[50px] flex justify-start items-center   opacity-80 hover:opacity-100  group cursor-pointer">
                     <img src={leftArrow} alt="..." className="md:hidden" />
                     <img
                       src={leftDarkArrow}
@@ -111,7 +115,7 @@ const Banner = () => {
               }}
               renderNextButton={() => {
                 return (
-                  <div className="absolute right-[-20px] md:right-0  top-[40%]  w-[50px]  h-[50px] flex justify-end items-center   opacity-80 hover:opacity-100  group cursor-pointer">
+                  <div className="absolute right-[-20px] md:right-[10px]  top-[40%]  w-[50px]  h-[50px] flex justify-end items-center   opacity-80 hover:opacity-100  group cursor-pointer">
                     <img src={rightArrow} alt="..." className="md:hidden" />
                     <img
                       src={rightDarkArrow}

@@ -9,11 +9,14 @@ import Team from "../components/homePage/7_team/Team";
 import Follow_Us from "../components/homePage/8_followUs/Follow_Us";
 import Testimony from "../components/homePage/9_testimony/Testimony";
 import JoinUs from "../components/homePage/10_joinUs/JoinUs";
-import Footer from "../components/homePage/11_footer/Footer";
+import Footer from "../components/global/Footer";
+import SubHeader from "../components/global/SubHeader";
 
 const HomePage = () => {
   return (
-    <div className="font-helveticaRegular">
+    <div>
+      <SubHeader />
+
       <Nav />
       <Banner />
       <Category />
